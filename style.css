@@ -1,67 +1,190 @@
-*{
-    margin: 0;
-    padding: 0;
+
+ *{
+   
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+    font-family:  sans-serif;
 }
-.main{
-    width: 100;
-    background: url(download\ \(1\).jpeg);
-    background-position:center;
-    background-size:cover;
-    height: 100vh;
-    position: relative;
-    font-size: sans-serif;
+body{
+    background-color: #f2f2f2 ;
 }
-.navbar{
-    width: 86%;
-    display: flex;
-    margin: auto;
-    padding: 15px 0;
-    align-items: center;
-    justify-content: space-between;
-}
-.navbar.logo{
-    width: 160px;
-    cursor: pointer;
-    margin-top: -3%;
-    margin-left: -2%;
-}
-ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 10px 16px;
-}
-ul li a{
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    color: blue;
-    margin-top: -2%;
-    transition: .4s;
-}
-ul li a:hover{
-    color: red;
-}
-.info{
-    margin-left: 7%;
-    margin-top: 6%;
-}
-.info h1{
-    font-size: 65px;
-    color:blueviolet;
+.heading{
+    width: 90%;
+    display:flex;
+    justify-content: center;
+    align-self:center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
 
 }
-.info h3{
+.heading h1{
+    font-size: 50;
+    color: darkblue;
+    margin-bottom: 25px;
+    position: relative;
+}
+.heading h1::after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(7, 248, 188);
+
+}
+.heading p{
     font-size: 18px;
-    letter-spacing: 1px;
-    list-style: 24px;
+    color:black;
+    margin-bottom: 35px; 
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+
+}
+.about{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-image{
+    flex:1;
+    margin-right: 40px;
+    overflow:hidden;
+
+}
+.about-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5% ease;
+
+}
+.about-image:hover img{
+    transform: scale(1.2);
+
+}
+
+
+
+.about-content{
+    flex:1;
+
+
+}
+.about-content h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color:rgb(61, 61, 95)
+
+}
+.about-content p{
+    font: 18px;
+    line-height: 1.5;
+    color:darkblack;
+}
+.about-content.read-more{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: blueviolet;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+.about-content.read-more:hover{
+    background-color: blueviolet;
+
+}
+media screen and(max-width:127px){
+    .heading{
+        padding: 0px 20px;
+
+    }
+    .heading h1{
+        font-size: 36px;
+    }
+    .heading p{
+        font-size:17px;
+        margin-bottom: 0px;
+    }
+    .container{
+        padding: 0px;
+    }
+        .about{
+            padding:20px;
+            flex-direction: column;
+        }
+        .about-image{
+            margin-right: 0px;
+            margin-bottom: 20px;
+                
+            }
+        
+    .about-content p{
+        padding: 0px;
+        font-stretch: 16px;
+    }
+}
+
+
+h1{
+    color: darkblack;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 60px;
+    font-family: sans-serif;
+
+}
+input{
+    background-color: white;
+    width: 70%;
+    margin-left: 12%;
+    font-size: 20px;
+    padding: 16px  16px;
+    border-radius: 10px; 
+    background-color: white;
+    margin-bottom: 20px;
+
+}
+textarea{
+    background-color: white;
+    width: 70%;
+    margin-left: 12%;
+    font-size: 20px; 
+    padding: 16px 16px;
+    border-radius: 10px;
+    border-color: black;
+    margin-bottom: 25px;
+    font-family: sans-serif;
     
 }
-.icons a{
-    text-align: none;
-    color: #000;
+input:focus-within{
+    outline: none;
+    border-color: blue;
+  
+    border-width: px;
 }
-.icons ion-icons{
-    margin-left: 7%;
-    color: aliceblue;
-    margin-right: -60px;
+
+
+
+
+button{
+    background-color: orangered;
+    border-radius: 20px;
+    background-color: orangered;
+ 
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+button:hover{
+    opacity: 80%;
+    cursor:pointer
 }

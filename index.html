@@ -1,38 +1,433 @@
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Personal home page</title>
-    <link rel="stylesheet" href="style.css">
+
+	<title>Online course website</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		body {
+			font-family: sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		.wrapper {
+
+			background-image: url(green.png);
+			background-position: no-repeat;
+			background-repeat: fixed;
+			background-attachment: fixed;
+			background-size: 100% 100%;
+		}
+
+		nav ul {
+			float: right;
+			margin: 0;
+			margin-right: 1.9rem;
+			background: #ccc;
+			text-align: center;
+		}
+
+		nav ul li {
+			list-style-type: none;
+			display: inline-block;
+		}
+
+
+		nav ul li a {
+			text-decoration: none;
+			color: blue;
+			padding: 25px;
+
+			padding: 25px 20px;
+			font-size: 15px;
+			text-transform: uppercase;
+			font-weight: bold;
+			text-align: center;
+
+		}
+
+		nav ul li:hover {
+			background-color: coral;
+			color: #000;
+			font-weight: bold;
+			font-size: 1.2rem;
+		}
+
+		img {
+			text-align: center;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.section {
+			width: 80%;
+			margin: auto;
+			overflow: hidden;
+			margin-top: 4%;
+		}
+
+		.section h1 {
+			color: darkblue;
+			line-height: 50px;
+		}
+
+		.btn-1 {
+			background-color: orangered;
+			padding: 0.7rem 1rem;
+			color: #fff;
+			border: none;
+			border-radius: 10px;
+		}
+
+		.features {
+			margin-top: 4%;
+			margin-bottom: 2%;
+		}
+
+		.features button {
+			padding: 0.7rem 2rem;
+			margin-right: 2rem;
+			font-size: 1.2rem;
+			opacity: 0.7;
+		}
+
+		showcase h1 {
+			margin-top: 10%;
+			margin-bottom: 10%;
+			text-align: center;
+		}
+
+		showcase p {
+			align-items: center;
+		}
+
+
+
+
+
+
+
+		.apply {
+			margin-top: 4%;
+			background-color: orangered;
+			padding: 0.7rem 1rem;
+			color: #fff;
+			border: none;
+			border-radius: 10px;
+
+
+		}
+
+		div.main {
+			width: 400px;
+			margin: 100px auto 0px auto;
+		}
+
+		h2,
+		h3 {
+			text-align: center;
+			padding: 20px;
+			font-size: sans-serif;
+			color: #000;
+
+		}
+
+		div.register {
+			background-color: rgba(0, 0, 0, 0.5);
+			width: 100%;
+			font-size: 18px;
+			border-radius: 10px;
+			border: 1px soild rgba(236, 9, 9, 0.958);
+			box-shadow: 2px 2px 150x rgba(0, 0, 0, 0.3);
+			color: #fff;
+
+		}
+
+		form#register {
+			margin: 40px;
+
+		}
+
+		lable {
+			font-family: sans-serif;
+			font-size: 18px;
+			font-style: italic;
+		}
+
+		input#name {
+			width: 300px;
+			border-radius: 3px;
+			outline: 0px;
+			padding: 7px;
+			background-color: #ffff;
+			box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.3);
+
+
+
+		}
+
+		input#submit {
+			width: 200px;
+			padding: 7px;
+			font-size: 16px;
+			font-family: sans-serif;
+			font-weight: 600;
+
+			border-radius: 3px;
+			background-color: rgba(230, 99, 12, 0.941);
+			cursor: pointer;
+			border: 1px soild rgba(0, 0, 50, 0.8);
+			box-shadow: 1px 1px 5px #db01014d;
+			margin-left: 20;
+		}
+
+		label,
+		span,
+		h2 {
+			text-shadow: 1px 1px 5px rgba(230, 99, 12, 0.941);
+		}
+	</style>
 </head>
+
 <body>
-    <div class="main">
-        <div class="navbar">
-            <img src="pankaj.png.jpg" class="logo">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">SKILLS</a></li>
-                <li><a href="#">MY WORKS</a></li>
-                <li><a href="#"> CONTACT ME</a></li>
-            </ul>
-        
-        </div>
-        <div class="info">
-            <h3> Hi,I'm <span>Pankaj Sagar</span>.</h3>
-            <h1> Web Developer</h1>
-            <h2> My name is pankaj Sagar. <br>I am 18+ years old.I recently graduated  with a degre in BCA from Invertis university.</br>
-                My dream is to become a Web Developer. 
-                </h2>
-                
-        </div>
-        <div class="icons">
-           
-            <a href="#"><ion-icon name="logo-phone"></ion-icon></a>
-            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-            <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
-        </div>
-    </div>
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    
+
+	<div class="wrapper">
+		<!---NAVIGATION--->
+		<nav>
+
+
+			<ul>
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">ABOUT</a></li>
+				<li><a href="#">COURSES</a></li>
+				<li><a href="#">REGISTRATION</a></li>
+				<li><a href="#">CONTACT</a></li>
+
+			</ul>
+
+		</nav>
+
+		<!--END OF NAVIGATION-->
+		<div class="section">
+			<h1> ONLINE COURSE</h1>
+			<a href="#"><button class="btn-1">GET STARTED</button></a>
+			<!---FEATURES-->
+			
+			<!--- END OF FEATURES-->
+			<div class="heading">
+				<h2> Abouts Us</h2>
+				<p>Creating a compelling website description for 
+					an online course platform is essential for attracting potential users 
+					and conveying the platform's unique value. 
+					Here's a suggested description:</p>
+			
+			</div>
+			<div class="container">
+				<section class="about">
+					<div class="about-image">
+						<img src="course.png">
+			
+					</div>
+					<div class="about-content">
+						<h3> 
+							
+							
+							Welcome to [Online Course Website !  ]   </h3>
+						   <p> Discover a world of knowledge with our extensive range of online courses designed for learners of all ages and backgrounds. 
+							Whether you’re a student, a professional, or a lifelong learner, we have something for everyone.
+
+						   </p>
+						   
+                    <button type="Read More"> Read More </button>
+						   
+					 
+			
+					</div>
+				</section>
+			</div>
+
+		
+		<!--- END OF SECTION--->
+
+	</div>
+	<!--- END OF SECTION--->
+
+	<!--- SHOWCAST--->
+	<showcase>
+		<h1>POPULAR COURSES WE OFFER</h1>
+
+		<div class="row">
+
+			<div class="column">
+				<h3>
+					Physics
+				</h3>
+				<p align="center">Physics is a subject that covers many topics, including:
+					Mechanics, Optics, Electromagnetism, Relativity, Acoustics, Thermodynamics, Electricity, Magnetism,
+					Human eye, and Reflection and refraction</p>
+				<p align="center">It consists of kinematics, the description of motion, and dynamics, the study of the
+					action of forces
+					in producing either motion or static equilibrium (the latter constituting the science of statics)
+				</p>
+				<table align="center">
+					<tr>
+						<th>
+							<img src="phaysic.jpeg" height="400px" width="800px" alt="Ph">
+						</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="#"><button class="apply">Apply Here</button></a>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="column">
+				<h3>Chemistry</h3>
+				<p align="center">
+					Chemistry is the branch of science that deals with the properties, composition, and structure of
+					elements and compounds, how they can change, and the energy that is released or absorbed when they
+					change</p>
+				<p align="center">General chemistry is the study of matter, energy, and the interactions between the
+					two. The main
+					topics in chemistry include acids and bases, atomic structure, the periodic table, chemical bonds,
+					and chemical reactions.</p>
+				<table align="center">
+					<tr>
+						<th>
+							<img src="che.png" height="400px" width="800px" alt="Chemistry">
+						</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="#"><button class="apply">Apply Here</button></a>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="column">
+				<h3>
+					Math
+				</h3>
+				<p align="center">Fundamentals of Maths covers basic arithmetic operations or calculations such as addition,
+					subtraction, multiplication and division, which are taught to us in primary classes. Going forward,
+					in higher classes, students will learn basic concepts like algebra, geometry, factors, ratios, etc.
+				</p>
+				<p align="center">Mathematics, or math, is a field of knowledge that covers topics such as numbers, shapes, quantities,
+					and change. Some branches of math include
+				</p>
+				<table align="center">
+					<tr>
+						<th>
+							<img src="math.png" height="400px" width="800px" alt="Math">
+						</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="#"><button class="apply">Apply Here</button></a>
+						</td>
+					</tr>
+				</table>
+
+			</div>
+
+
+		</div>
+
+	</showcase>
+
+	</div>
+	<!---  END OF SHOWCAST--->
+	<!---SINE IN FORM-->
+	<div class="main">
+		<div class="register">
+			<h2> Register Here</h2>
+			<form id="register" method="post">
+
+				<label>
+					First Name :
+				</label>
+				<br>
+				<input type="text" name="fname" id="name" placeholder="Enter your First Name">
+				<br><br>
+				<label>
+					Last Name :
+				</label>
+				<br>
+				<input type="text" name="lname" id="name" placeholder="Enter your Last Name">
+				<br>
+				<br>
+				<label> Your Age :</label>
+				<br>
+				<input type="nu" name="age" id="name" placeholder="How old are you?">
+				<br>
+				<br>
+				<label>
+					Email :
+				</label>
+				<br>
+				<input type="email" name="email" id="name" placeholder="Enter your valid Email">
+				<br>
+				<br>
+				<label>
+					Gender :
+				</label>
+				<br>
+				&nbsp;&nbsp;&nbsp;
+				<input type="radio" name="gender" id="male">
+
+				&nbsp;
+				<span id="male">Male</span>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="radio" name="gender" id="female">
+				&nbsp;
+				<span id="female">Female</span>
+				<br>
+				<br>
+				<label>
+					Known Language
+				</label>
+				<br>
+				&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" name="lang" id="Math">
+				&nbsp;
+				<span id="math">Math</span>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" name="lang" id="Physics">
+				&nbsp;
+				<span id="Physics">Physics</span>
+				&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" name="lang" id="Chemistry">
+				&nbsp;
+				<span id="Chemistry">Chemistry</span>
+				<br> <br>
+				<a href="",class="read-more"></a>
+			 </form>
+		</div>
+	</div>
 </body>
+
+</html>
+		<h2> Contact Us</h2>
+<input type="text" name="First" placeholder="First name" autocomplete="off" required>
+<input type="text" name="last" placeholder="last name" autocomplete="off" required>
+<input type="email" name="email" placeholder="Email Address" autocomplete="off" required>
+<textarea rows="5" cols="60" name="massage" placeholder="Enter your text"></textarea>
+
+<button type="submit"> Send Message </button>
+	</div>
+
+
+	
+</body>
+
 </html>
